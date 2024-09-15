@@ -4,7 +4,7 @@ FUSE filesystem that mounts OnBotJava to a folder on your computer. Developed an
 
 ## WARNING
 
-This is **experimental software**. It won't be fast, and there could be serious data loss bugs. Always have a backup of code before using this. (Really, that's good practice anyway).
+This is a **proof-of-concept**. It won't be fast, and there could be serious data loss bugs. Always have a backup of code before using this. (Really, that's good practice anyway.)
 
 ## Known Issues
 
@@ -12,8 +12,14 @@ This is **experimental software**. It won't be fast, and there could be serious 
 2. Cannot delete files or folders
 3. Cannot create folders
 4. Cannot build
+5. No sanity checks to ensure you don't accidentally switch to another robot's wifi network
+
+## The future
+
+This was mostly meant as a proof-of-concept to reverse-engineer the protocol. I am planning on making a synchronisation software that copies everything from a folder to OnBotJava when you ask it to. That way, you don't have to directly work on the filesystem, but you also still don't have to use the OnBotJava web UI. (You also won't have to remain connected to the robot's WiFi network, and it's a free backup.)
 
 ## Licence
+
 Copyright 2024 ToboriW
 
 Licensed under the Apache License, Version 2.0 (the "License");
