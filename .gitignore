@@ -1,1 +1,4 @@
 test/
+*.egg-info/
+__pycache__/
+*.py[co]
